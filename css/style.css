@@ -7,6 +7,9 @@ body{
 	margin:0;
 	padding: 0;
 }
+img{
+	max-width: 100%;
+}
 
 .row{
   width: 100%;
@@ -230,4 +233,68 @@ iframe{
 article footer{
 	width: 600px;
 	margin: 0 auto;
+}
+#recomended{
+	width: 1280px;
+	padding: 20px 40px 0;
+	display: flex;
+	margin: 0 auto;
+}
+.recomended-container{
+	width: 71%;
+}
+.most-popular{
+	width: 29%;
+	padding-left: 30px;
+}
+.news-list{
+	list-style-type: none;
+	padding:0;
+	display: flex;
+	margin: 0;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.news-list .list-item{
+	
+	width: 32%;
+  	padding-bottom: 20px;
+}
+.image-src{
+	font-size: 11px;
+    color: rgb(153, 153, 153);
+    margin: 3px 0 0 0;
+    text-align: right;
+}
+.news-list .list-item h3{
+	margin: 0;
+}
+.news-list .list-item h3 a{
+	color: #121212;
+	font-size: 19px;
+    line-height: 1.3em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.news-list .list-item h3 a:hover{
+	color: #666;
+}
+.news-list .list-item time{
+	font-size: 12px;
+	color: #999;
+}
+.more-of-category h2{
+	border-top: 1px solid #000;	
+	padding-top: 17px;
+	padding-bottom: 15px;
+	margin: 0;
+}
+.more-of-category h2 a{
+	text-decoration: none;
+	color: #000;
+	font-size: 17px;
+
+}
+.more-of-category h2 a:hover{
+	text-decoration: underline;
 }
