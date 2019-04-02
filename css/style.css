@@ -287,12 +287,38 @@ article footer{
 	font-size: 12px;
 	color: #999;
 }
-.more-of-category h2{
+.more-of-category h2,
+.most-popular h2{
 	border-top: 1px solid #000;
 	padding-top: 17px;
 	padding-bottom: 15px;
 	margin: 0;
 }
+.most-popular ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.most-popular ul li{
+	padding: 15px 0;
+	border-bottom: 1px solid #e2e2e2;
+}
+.most-popular ul li:first-child{
+	border-top: 1px solid #e2e2e2;
+}
+.most-popular ul li:last-child{
+	border-bottom: 0;
+}
+.most-popular ul li a{
+	color: #121212;
+	font-size: 20px;
+	line-height: 1.2em;	
+}
+.most-popular ul li a:hover{
+	color: #666666;	
+}
+
+
 .more-of-category h2 a{
 	text-decoration: none;
 	color: #000;
@@ -304,7 +330,9 @@ article footer{
 }
 
 .nav .nav-justify-center {
-  text-align: center;
+  	text-align: center;
+    padding-top: 9px;
+	border-top: 1px solid rgb(235, 235, 235);
 }
 
 .nav li {
@@ -332,7 +360,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+#some-links{
+	padding-bottom: 9px;
+}
 #some-links header {
   border-top: 2px solid #ddd;
   padding-top: 8px;
@@ -344,14 +374,21 @@ ul {
 #some-links .logo {
   width: 195px;
 }
-#some-links .container {
-  padding: 9px 40px;
+#some-links .container,
+footer .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 #some-links h4 {
   margin: 0;
   padding: 0 0 5px 0;
 }
+#some-links .nav li  {
+  padding: 3.5px 0px;
+}
+
 #some-links .nav li a {
   text-decoration: none;
   padding: 0px;
@@ -361,23 +398,40 @@ ul {
 #some-links .nav li a:hover {
   text-decoration: underline;
 }
-#some-links .nav li  {
-  padding: 5px 0px;
-}
 
-.col {
-  display: inline-block;
-  padding: 0 15px;
-  width: 16%;
-  float: left;
-}
 
 #subscribe {
   border-left: 1px solid #ddd;
+  padding-left: 15px;
 }
 
 
 .text-right {
   float: right;
   margin-top: -18px;
+}
+
+footer .footer-icon{
+	width: 13px;
+	height: 13px;
+	margin-right: 7px;
+}
+.icon-item{
+	font-weight: bold;
+}
+.flex-row{
+	display: flex;
+    justify-content: space-between;
+}
+#some-links .nav li.seperator-item{
+	padding-top: 10px;
+	border-top: 1px solid rgb(226, 226, 226);
+}
+#some-links #subscribe .nav li a{
+	font-size: 11px;
+	font-weight: 500;	
+}
+#some-links #subscribe .nav li.icon-item a{
+	font-size: 16px;
+	font-weight: bold;
 }
